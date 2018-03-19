@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 718px;
+  background: linear-gradient(white, steelblue) no-repeat;
+  padding-top: 10px; }
+  body .container {
+    height: 400px;
+    width: 800px;
+    margin: 0px auto;
+    padding: 220px 170px; }
+    body .container button {
+      height: 70px;
+      width: 180px;
+      border: 2px solid transparent;
+      margin-right: 30px;
+      outline: none;
+      background: steelblue;
+      color: white;
+      font-size: 18px;
+      transition-duration: 0.3s; }
+      body .container button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        border-radius: 30px; }
+    body .container #viewCourseButton {
+      background: white;
+      color: black; }
+  body .courseDetailsForm {
+    height: 676px;
+    width: 800px;
+    border: 3px solid white;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 20px;
+    position: relative; }
+    body .courseDetailsForm .inputField, body .courseDetailsForm #submitForm {
+      height: 50px;
+      width: 400px;
+      border: 1px solid;
+      border-radius: 10px;
+      margin-top: 25px;
+      outline: none;
+      text-indent: 10px; }
+      body .courseDetailsForm .inputField:hover, body .courseDetailsForm #submitForm:hover {
+        cursor: pointer; }
+    body .courseDetailsForm .courseName, body .courseDetailsForm .courseType, body .courseDetailsForm .coursePrice, body .courseDetailsForm .courseAuthor, body .courseDetailsForm .courseRating, body .courseDetailsForm .imgUrl {
+      border: 0px solid;
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      left: 205px;
+      font-size: 20px;
+      font-family: sans-serif; }
+    body .courseDetailsForm .courseType {
+      top: 110px; }
+    body .courseDetailsForm .coursePrice {
+      top: 200px; }
+    body .courseDetailsForm .courseAuthor {
+      top: 295px; }
+    body .courseDetailsForm .courseRating {
+      top: 385px; }
+    body .courseDetailsForm .imgUrl {
+      top: 480px; }
+    body .courseDetailsForm #submitForm {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+      border-radius: 0px;
+      background: #4CAF50;
+      color: white;
+      border: 1px solid black;
+      transition-duration: 0.2s; }
+      body .courseDetailsForm #submitForm:hover {
+        width: 150px;
+        border-radius: 20px;
+        background: steelblue;
+        color: white; }
+  body .cartClass {
+    height: 270px;
+    width: 900px;
+    border: 2px solid;
+    margin-top: 20px;
+    background: steelblue;
+    text-align: center;
+    padding-top: 20px;
+    font-Family: sans-serif;
+    color: white;
+    margin: 10px auto; }
+    body .cartClass h2 {
+      color: red; }
+  body .cartImg {
+    height: 200px;
+    width: 200px;
+    background: red;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 15px; }
+    body .cartImg img {
+      height: 100%;
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

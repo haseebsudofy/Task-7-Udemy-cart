@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 718px;
+    background: linear-gradient(white,steelblue) no-repeat;
+    padding-top: 10px;
+    .container{
+        height: 400px;
+        width: 800px;
+        // background: white;
+        // border: 2px solid steelblue;
+        margin: 0px auto;
+        // margin-top: 40px;
+        padding: 220px 170px;
+        button{
+            height: 70px;
+            width: 180px;
+            border: 2px solid transparent;
+            margin-right: 30px;
+            outline: none;
+            background: steelblue;
+            color: white;
+            font-size: 18px;
+            transition-duration: 0.3s;
+            // font-family: sans-serif;
+            &:hover{
+                cursor: pointer;
+                opacity: 0.7;
+                border-radius: 30px;
+            }
+        }
+        #viewCourseButton{
+            background: white;
+            color: black;
+        }
+    }
+    .courseDetailsForm{
+        height: 676px;
+        width: 800px;
+        border: 3px solid white;
+        margin: 20px auto;
+        text-align: center;
+        padding-top: 20px;
+        position: relative;
+        .inputField{
+            height: 50px;
+            width: 400px;
+            border: 1px solid;
+            border-radius: 10px;
+            margin-top: 25px;
+            outline: none;
+            text-indent: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .courseName{
+            border: 0px solid;
+            display: inline-block;
+            position: absolute;
+            top : 15px;
+            left: 205px;
+            font-size: 20px;
+            font-family: sans-serif;
+            
+        }
+        .courseType{
+            @extend .courseName ;
+            top : 110px;
+        }
+        .coursePrice{
+            @extend .courseName ;
+            top : 200px;
+        }
+        .courseAuthor{
+            @extend .courseName ;
+            top : 295px;
+        }
+        .courseRating{
+            @extend .courseName ;
+            top : 385px;
+        }
+        .imgUrl{
+            @extend .courseName ;
+            top : 480px;
+        }
+        #submitForm{
+            @extend .inputField ;
+            
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            border-radius: 0px;
+            background: #4CAF50;
+            color: white;
+            border: 1px solid black;
+            transition-duration: 0.2s;
+            &:hover{
+                width: 150px;
+                border-radius: 20px;
+                background: steelblue;
+                color: white;
+                // transition-duration: 0.2s;
+            }
+        }
+    }
+
+    .cartClass{
+    height : 270px;
+    width : 900px;
+    border : 2px solid;
+    margin-top : 20px;
+    background : steelblue;
+    text-align: center;
+    padding-top : 20px;
+    font-Family : sans-serif;
+    color : white;
+    margin : 10px auto;
+    h2{
+        color: red;
+    }
+        }
+    .cartImg{
+        height: 200px;
+        width: 200px;
+        background: red;
+        border: 1px solid black;    
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 15px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }    
+        
+}

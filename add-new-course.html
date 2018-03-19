@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- <script src="main.js"></script> -->
+    </head>
+    <body>
+        <form class="courseDetailsForm" onsubmit="formDetails(event)">
+            <h3 class="courseName"> Course Name </h3> <br>
+            <input onkeydown="myfunc(event)" class="inputField" id="courseName" type="text" placeholder="Course Name.." required/> <br> <br>
+            <h3 class="courseType"> Course Type </h3>
+            <select class="inputField" id="courseType">
+                <option>Java</option>
+                <option>C++</option>
+                <option>HTML</option>
+            </select> <br> <br>
+            <h3 class="coursePrice"> Price </h3>
+            <input class="inputField" id="coursePrice" type="number" placeholder="Price.." required/> <br> <br>
+            <h3 class="courseAuthor"> Author Name </h3>
+            <input class="inputField" id="authorName" type="text" placeholder="Author Name" required> <br> <br>
+            <h3 class="courseRating"> Course Rating </h3>
+            <select class="inputField" id="courseRating">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option selected>5</option>
+            </select> 
+            <br> <h3 class="imgUrl"> Image Url </h3> <br>
+            <input class="inputField" id="courseImg" type="text" placeholder="Enter image url here.." required> <br> <br>
+            <button id="submitForm" onsubmit="formDetails(event)">Submit</button>
+        </form>
+        <script src="main.js"></script>
+    </body>
+</html>
